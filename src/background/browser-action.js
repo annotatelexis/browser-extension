@@ -57,11 +57,11 @@ export default function BrowserAction(chromeBrowserAction) {
 
     if (state.state === states.ACTIVE) {
       activeIcon = icons[states.ACTIVE];
-      title = 'Hypothesis is active';
+      title = 'AnnotateLexis is active';
     } else if (state.state === states.INACTIVE) {
-      title = 'Hypothesis is inactive';
+      title = 'AnnotateLexis is inactive';
     } else if (state.state === states.ERRORED) {
-      title = 'Hypothesis failed to load';
+      title = 'AnnotateLexis failed to load';
       badgeText = '!';
     } else {
       throw new Error('Unknown tab state');
